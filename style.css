@@ -3,15 +3,28 @@
   margin: 0;
 }
 
+body {
+  background-color: white;
+  padding: 1%;
+}
+
+/* img */
+
 img {
   max-width: 100%;
 }
+article img {
+  cursor: pointer;
+}
+
+/* Header + nav */
+
 header {
   text-align: center;
 }
 .heading {
-  background-color: #ff1f31;
   color: white;
+  background-color: #ff1f31;
   padding: 8%;
 }
 
@@ -29,7 +42,6 @@ button {
   color: white;
   padding: 15px 13px;
   border: none;
-  border-radius: 0px;
   cursor: pointer;
   transition: all 0.5s ease 0s;
 }
@@ -38,6 +50,8 @@ button:hover {
   color: black;
   background-color: white;
 }
+
+/* main styling */
 
 main {
   display: grid;
@@ -66,9 +80,51 @@ article:nth-child(even) {
   grid-row-gap: 15px;
 }
 
-body {
-  background-color: white;
-  padding: 1%;
+/* popup */
+
+#popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ff8c00;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+#popup article {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 4rem auto;
+  border: 8px solid;
+  border-color: #ff1f31;
+  background-color: rgb(243, 27, 27);
+}
+
+#popup article p {
+  color: white;
+}
+
+#popup article img {
+  cursor: auto;
+}
+
+.info2 {
+  padding: 10px 0px;
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+#luk {
+  color: white;
+  position: fixed;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
 }
 
 /* tekst styling */
@@ -118,6 +174,8 @@ h4 {
   margin-bottom: 20px;
 }
 
+/* styling over 800px */
+
 @media (min-width: 800px) {
   .heading {
     display: grid;
@@ -141,5 +199,22 @@ h4 {
 
   button {
     padding: 20px 35px;
+  }
+}
+
+/* popup over 800px */
+@media (min-width: 800px) {
+  #popup {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #popup article {
+    width: 30vw;
+    height: auto;
+    margin: 4rem auto;
+  }
+  #popup article p {
+    color: white;
   }
 }
