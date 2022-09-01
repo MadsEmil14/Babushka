@@ -6,25 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Babushka</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Alle</h1>
+      <div class="heading">
+        <h1>BISTRO BABUSHKA</h1>
+        <h2>&mdash;MENU&mdash;</h2>
+      </div>
     </header>
     <nav>
       <button data-kategori="alle" class="valgt">Alle</button>
-      <button data-kategori="foretter">Forretter</button>
+      <button data-kategori="forretter">Forretter</button>
       <button data-kategori="hovedretter">Hovedretter</button>
       <button data-kategori="desserter">Desserter</button>
       <button data-kategori="drikkevarer">Drikkevarer</button>
     </nav>
+    <h4>Alle</h4>
     <main id="holder"></main>
     <template>
       <article>
         <img src="" alt="" />
-        <h2 class="navn"></h2>
-        <p class="beskrivelse"></p>
-        <p class="pris"></p>
+        <div class="info">
+          <h2 class="navn"></h2>
+          <p class="pris"></p>
+          <p class="beskrivelse"></p>
+        </div>
       </article>
     </template>
     <script src="babushka.js"></script>

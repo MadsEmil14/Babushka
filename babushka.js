@@ -8,7 +8,7 @@ const options = {
 
 const main = document.querySelector("#holder");
 const template = document.querySelector("template").content;
-const header = document.querySelector("header h1");
+const header = document.querySelector("h4");
 
 let filter = "alle";
 const filterKnapper = document.querySelectorAll("nav button");
@@ -39,7 +39,7 @@ function vis(json) {
       klon.querySelector("img").src = "billeder/" + json.billednavn + "-md.jpg";
       klon.querySelector(".navn").textContent = json.navn;
       klon.querySelector(".beskrivelse").textContent = json.kortbeskrivelse;
-      klon.querySelector(".pris").textContent = json.pris;
+      klon.querySelector(".pris").textContent = "" + json.pris + ",-";
       main.appendChild(klon);
     }
   });

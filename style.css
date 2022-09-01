@@ -1,3 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 img {
-  max-width: 50%;
+  max-width: 100%;
+}
+header {
+  text-align: center;
+}
+.heading {
+  background-color: #ff1f31;
+  color: white;
+  padding: 8%;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 1%;
+  justify-content: center;
+}
+
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  margin-top: 2%;
+  background-color: #ff1f31;
+  color: white;
+  padding: 15px 13px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 5vh;
+  row-gap: 8vh;
+  text-align: start;
+}
+
+article:nth-child(odd) {
+  background-color: #ff1f31;
+  border: solid 5px;
+  border-color: #ff1f31;
+}
+
+article:nth-child(even) {
+  background-color: #ff8c00;
+  border: solid 5px;
+  border-color: #ff8c00;
+}
+
+.info {
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 15px;
+}
+
+body {
+  background-color: white;
+  padding: 1%;
+}
+
+/* tekst styling */
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.pris {
+  text-align: right;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 10%;
+  letter-spacing: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+h3 {
+  color: white;
+  background-color: rgb(255, 128, 0);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h4 {
+  color: #ff1f31;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .heading {
+    display: grid;
+    color: white;
+    padding: 0%;
+    margin: 0;
+  }
+  .heading h1 {
+    font-size: 80px;
+    margin-top: 5%;
+  }
+  .heading h2 {
+    font-size: 40px;
+    padding-bottom: 1%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  button {
+    padding: 20px 35px;
+  }
 }
